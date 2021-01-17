@@ -14,9 +14,10 @@ const play = plays[perf.playID];
 **_after_**
 
 ```javascript
+//name function that ends with "For" to make bind with parameter more obvious
 function playFor(aPerformance) {
 	return plays[aPerformance.playID];
 }
 
-const play = playFor(perf.playID); //then replace all the local play variables with function
+const play = playFor(perf.playID); //then replace all of the local "play" variables with function
 ```
