@@ -13,3 +13,13 @@
 -With good names, I don't have to read the body of the function to see what it does.
 
 -My overall advice on performance with refactoring is: Most of the time you should ignore it. If your refactoring introduces performance slow-downs, finish refactoring first and do performance tuning afterwards.
+
+-Refactoring (noun): a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior.
+
+-If someone says their code was broken for a couple of days while they are refactoring, you can be pretty sure they were not refactoring.
+
+-Refactoring is always done to make the code "easier to understand and cheaper to modify." This might speed things up or slow things down.
+
+-If I need to add a new function and the design does not suit the change, I find it’s quicker to refactor first and then add the function.
+
+-The problem of complicated merges gets exponentially worse as the length of feature branches increases. Integrating branches that are four weeks old is more than twice as hard as those that are a couple of weeks old. Many people, therefore, argue for keeping feature branches short—perhaps just a couple of days. Others, such as me, want them even shorter than that. This is an approach called Continuous Integration (CI), also known as Trunk-Based Development. With CI, each team member integrates with mainline at least once per day. This prevents any branches diverting too far from each other and thus greatly reduces the complexity of merges.
