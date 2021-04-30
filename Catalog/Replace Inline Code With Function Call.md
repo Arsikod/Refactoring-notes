@@ -1,0 +1,1 @@
+-Functions allow me to package up bits of behavior. This is useful for understanding—a named function can explain the purpose of the code rather than its mechanics. It's also valuable to remove duplication: Instead of writing the same code twice, I just call the function.
