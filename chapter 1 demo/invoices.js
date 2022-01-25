@@ -1,4 +1,4 @@
-exports.invoices = {
+const invoices = {
   customer: "BigCo",
   performances: [
     {
@@ -15,3 +15,5 @@ exports.invoices = {
     },
   ],
 };
+
+export default invoices;
