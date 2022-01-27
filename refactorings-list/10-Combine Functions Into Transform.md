@@ -2,6 +2,8 @@
 
 -When I'm applying a transformation that produces essentially the same thing but with additional information, I like to name it using "enrich". If it were producing something I felt was different, I would name it using "transform".
 
+-I can deal with this repetition by using Extract Function on these calculations, but such functions often end up scattered around the program making it hard for future developers to realize they are there.
+
 **_before_**
 
 ```javascript
@@ -13,9 +15,9 @@ function taxableCharge(aReading) {...}
 
 ```javascript
 function enrichReading(argReading) {
-	const aReading = _.cloneDeep(argReading);
-	aReading.baseCharge = base(aReading);
-	aReading.taxableCharge = taxableCharge(aReading);
-	return aReading;
+  const aReading = _.cloneDeep(argReading);
+  aReading.baseCharge = base(aReading);
+  aReading.taxableCharge = taxableCharge(aReading);
+  return aReading;
 }
 ```

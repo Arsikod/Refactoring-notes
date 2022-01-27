@@ -1,4 +1,5 @@
--As soon as I realize I want to do something other than simple printing, I like to create a new class for that bit of data. At first, such a class does little more than wrap the primitive—but once I have that class, I have a place to put behavior specific to its needs.
+-As soon as I realize I want to do something other than simple printing, I like to create a new class for that bit of data.
+At first, such a class does little more than wrap the primitive—but once I have that class, I have a place to put behavior specific to its needs.
 
 **_before_**
 
